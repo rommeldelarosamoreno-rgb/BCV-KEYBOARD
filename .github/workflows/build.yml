@@ -21,8 +21,14 @@ jobs:
     - name: Configurar Android SDK
       uses: android-actions/setup-android@v3
 
-    - name: Dar permisos de ejecución y compilar APK
+    - name: Instalar Gradle y Compilar APK
       run: |
-        chmod +x gradlew || echo "Gradlew se generará"
-        # Aquí compilaremos el proyecto de Android automáticamente
-        echo "Preparando compilación en la nube..."
+        sudo apt-get update && sudo apt-get install -y gradle
+        gradle wrapper
+        ./gradlew assembleDebug
+
+    - name: Subir APK Generado
+      uses: actions/upload-artifact@v4
+      with:
+        name: bcv-keyboard-apk
+        path: app/build/outputs/apk/debug/app-debug.apk
