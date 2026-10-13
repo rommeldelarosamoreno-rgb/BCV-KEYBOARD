@@ -12,18 +12,15 @@ jobs:
     - name: Copiar código del repositorio
       uses: actions/checkout@v4
 
-    - name: Configurar Java JDK 17
+    - name: Configurar Java 17
       uses: actions/setup-java@v4
       with:
         distribution: 'temurin'
         java-version: '17'
 
-    - name: Configurar Android SDK
-      uses: android-actions/setup-android@v3
-
-    - name: Instalar Gradle y Compilar APK
+    - name: Compilar APK con Gradle
       run: |
-        sudo apt-get update && sudo apt-get install -y gradle
+        chmod +x gradlew || true
         gradle wrapper
         ./gradlew assembleDebug
 
