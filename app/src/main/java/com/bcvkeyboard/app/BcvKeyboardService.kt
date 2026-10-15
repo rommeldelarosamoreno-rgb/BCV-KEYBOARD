@@ -14,7 +14,7 @@ class BcvKeyboardService : InputMethodService(), KeyboardView.OnKeyboardActionLi
     override fun onCreateInputView(): View {
         val view = layoutInflater.inflate(R.layout.keyboard_view, null)
 
-        // Configurar Botones de Tasas
+        // Configurar Botones de Tasas Superiores
         val btnDolar = view.findViewById<Button>(R.id.btn_dolar)
         btnDolar?.setOnClickListener {
             currentInputConnection?.commitText("Dólar: 37.00", 1)
@@ -39,7 +39,7 @@ class BcvKeyboardService : InputMethodService(), KeyboardView.OnKeyboardActionLi
         return view
     }
 
-    override fun Key(primaryCode: Int, keyCodes: IntArray?) {
+    override fun onKey(primaryCode: Int, keyCodes: IntArray?) {
         val ic = currentInputConnection ?: return
         when (primaryCode) {
             Keyboard.KEYCODE_DELETE -> {
