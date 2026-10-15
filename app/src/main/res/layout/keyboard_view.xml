@@ -3,86 +3,47 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:background="#ECEFF1">
+    android:background="#ECEFF1"
+    android:padding="8dp">
 
-    <!-- Barra Superior: Calculadora / Predicción -->
-    <LinearLayout
-        android:id="@+id/calculatorBar"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:background="#E0E6E9"
-        android:gravity="center_vertical"
-        android:paddingHorizontal="12dp">
-
-        <TextView
-            android:id="@+id/tvCalcPreview"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Calculadora lista (ej: 5*10)"
-            android:textColor="#1C2B33"
-            android:textSize="14sp" />
-    </LinearLayout>
-
-    <!-- Área Principal de Teclas (Representación Básica) -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="180dp"
-        android:gravity="center"
-        android:padding="8dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="[ ÁREA DE TECLAS QWERTY ]"
-            android:textColor="#78909C"
-            android:textSize="16sp" />
-    </LinearLayout>
-
-    <!-- Fila Inferior: Botones BCV y Binance (Debajo del espacio) -->
-    <LinearLayout
+    <!-- Botón superior con la Tasa Oficial BCV -->
+    <Button
+        android:id="@+id/btn_bcv_rate"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:orientation="horizontal"
-        android:padding="4dp"
-        android:weightSum="3"
-        android:background="#ECEFF1">
+        android:text="Tasa BCV: Cargando..."
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#0D47A1"
+        android:layout_marginBottom="8dp" />
 
-        <!-- Botón USD BCV -->
-        <Button
-            android:id="@+id/btnUsdBcv"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:layout_margin="2dp"
-            android:text="💵 USD BCV"
-            android:textSize="12sp"
-            android:textColor="#1C2B33"
-            android:backgroundTint="#E0E6E9" />
+    <!-- Fila de teclas numéricas -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
-        <!-- Botón EUR BCV -->
         <Button
-            android:id="@+id/btnEurBcv"
+            android:id="@+id/btn_7"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="50dp"
             android:layout_weight="1"
-            android:layout_margin="2dp"
-            android:text="💶 EUR BCV"
-            android:textSize="12sp"
-            android:textColor="#1C2B33"
-            android:backgroundTint="#E0E6E9" />
+            android:text="7" />
 
-        <!-- Botón Binance P2P (Premium) -->
         <Button
-            android:id="@+id/btnBinanceP2p"
+            android:id="@+id/btn_8"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="50dp"
             android:layout_weight="1"
-            android:layout_margin="2dp"
-            android:text="🟡 Binance"
-            android:textSize="12sp"
-            android:textColor="#1E2329"
-            android:backgroundTint="#F0B90B" />
+            android:text="8" />
+
+        <Button
+            android:id="@+id/btn_9"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="9" />
     </LinearLayout>
 
 </LinearLayout>
