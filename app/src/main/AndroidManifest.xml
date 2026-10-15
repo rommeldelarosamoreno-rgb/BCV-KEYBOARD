@@ -1,7 +1,3 @@
-XML
-
-
-<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
@@ -10,9 +6,8 @@ XML
         android:label="BCV Keyboard"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-
-        <!-- Servicio del Teclado -->
+        android:theme="@style/Theme.AppCompat.Light">
+        
         <service
             android:name=".BcvKeyboardService"
             android:permission="android.permission.BIND_INPUT_METHOD"
