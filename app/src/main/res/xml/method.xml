@@ -1,0 +1,10 @@
+XML
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<input-method xmlns:android="http://schemas.android.com/apk/res/android">
+    <subtype
+        android:label="Español (BCV Keyboard)"
+        android:imeSubtypeLocale="es_ES"
+        android:imeSubtypeMode="keyboard" />
+</input-method>
