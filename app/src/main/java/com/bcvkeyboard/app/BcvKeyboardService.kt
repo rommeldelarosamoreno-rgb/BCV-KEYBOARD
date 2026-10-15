@@ -9,12 +9,6 @@ class BcvKeyboardService : InputMethodService() {
     override fun onCreateInputView(): View {
         val view = layoutInflater.inflate(R.layout.keyboard_view, null)
 
-        // Botón BCV
-        val btnBcv = view.findViewById<Button>(R.id.btn_bcv_rate)
-        btnBcv?.setOnClickListener {
-            currentInputConnection?.commitText("BCV: 36.50", 1)
-        }
-
         // Botón Dólar
         val btnDolar = view.findViewById<Button>(R.id.btn_dolar)
         btnDolar?.setOnClickListener {
