@@ -2,30 +2,36 @@ package com.bcvkeyboard.app
 
 import android.inputmethodservice.InputMethodService
 import android.view.View
-import android.view.ViewGroup
 import android.widget.Button
-import android.widget.LinearLayout
 
 class BcvKeyboardService : InputMethodService() {
 
     override fun onCreateInputView(): View {
-        val container = LinearLayout(this).apply {
-            orientation = LinearLayout.VERTICAL
-            layoutParams = ViewGroup.LayoutParams(
-                ViewGroup.LayoutParams.MATCH_PARENT,
-                ViewGroup.LayoutParams.WRAP_CONTENT
-            )
+        val view = layoutInflater.inflate(R.layout.keyboard_view, null)
+
+        val btnBcv = view.findViewById<Button>(R.id.btn_bcv_rate)
+        btnBcv.text = "BCV: Bs. 36.50 (Pegar)"
+        
+        btnBcv.setOnClickListener {
+            val ic = currentInputConnection
+            ic?.commitText("Bs. 36.50", 1)
         }
 
-        val button = Button(this).apply {
-            text = "BCV: Actualizando..."
-            layoutParams = LinearLayout.LayoutParams(
-                LinearLayout.LayoutParams.MATCH_PARENT,
-                ViewGroup.LayoutParams.WRAP_CONTENT
-            )
+        val btn7 = view.findViewById<Button>(R.id.btn_7)
+        btn7?.setOnClickListener {
+            currentInputConnection?.commitText("7", 1)
         }
 
-        container.addView(button)
-        return container
+        val btn8 = view.findViewById<Button>(R.id.btn_8)
+        btn8?.setOnClickListener {
+            currentInputConnection?.commitText("8", 1)
+        }
+
+        val btn9 = view.findViewById<Button>(R.id.btn_9)
+        btn9?.setOnClickListener {
+            currentInputConnection?.commitText("9", 1)
+        }
+
+        return view
     }
 }
