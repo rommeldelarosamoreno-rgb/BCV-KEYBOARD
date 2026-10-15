@@ -10,13 +10,53 @@
     <Button
         android:id="@+id/btn_bcv_rate"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:text="Tasa BCV: Cargando..."
-        android:textSize="16sp"
+        android:layout_height="45dp"
+        android:text="BCV: Bs. 36.50"
+        android:textSize="14sp"
         android:textStyle="bold"
         android:textColor="#FFFFFF"
         android:backgroundTint="#0D47A1"
-        android:layout_marginBottom="8dp" />
+        android:layout_marginBottom="6dp" />
+
+    <!-- Fila de tasas: Dólar, Euro y Binance -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="6dp">
+
+        <Button
+            android:id="@+id/btn_dolar"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_weight="1"
+            android:text="Dólar"
+            android:textSize="12sp"
+            android:backgroundTint="#2E7D32"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btn_euro"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_weight="1"
+            android:text="Euro"
+            android:textSize="12sp"
+            android:backgroundTint="#C62828"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp" />
+
+        <Button
+            android:id="@+id/btn_binance"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_weight="1"
+            android:text="Binance"
+            android:textSize="12sp"
+            android:backgroundTint="#F57F17"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
 
     <!-- Fila de teclas numéricas -->
     <LinearLayout
@@ -27,21 +67,21 @@
         <Button
             android:id="@+id/btn_7"
             android:layout_width="0dp"
-            android:layout_height="50dp"
+            android:layout_height="45dp"
             android:layout_weight="1"
             android:text="7" />
 
         <Button
             android:id="@+id/btn_8"
             android:layout_width="0dp"
-            android:layout_height="50dp"
+            android:layout_height="45dp"
             android:layout_weight="1"
             android:text="8" />
 
         <Button
             android:id="@+id/btn_9"
             android:layout_width="0dp"
-            android:layout_height="50dp"
+            android:layout_height="45dp"
             android:layout_weight="1"
             android:text="9" />
     </LinearLayout>
