@@ -1,6 +1,3 @@
-Kotlin
-
-
 pluginManagement {
     repositories {
         google()
