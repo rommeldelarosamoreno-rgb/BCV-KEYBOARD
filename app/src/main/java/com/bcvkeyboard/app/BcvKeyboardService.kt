@@ -1,3 +1,6 @@
+Kotlin
+
+
 package com.bcvkeyboard.app
 
 import android.inputmethodservice.InputMethodService
@@ -14,26 +17,29 @@ class BcvKeyboardService : InputMethodService(), KeyboardView.OnKeyboardActionLi
     override fun onCreateInputView(): View {
         val view = layoutInflater.inflate(R.layout.keyboard_view, null)
 
-        // Configurar Botones de Tasas Superiores
+        // Botón Dólar (Solo envía el número)
         val btnDolar = view.findViewById<Button>(R.id.btn_dolar)
         btnDolar?.setOnClickListener {
-            currentInputConnection?.commitText("Dólar: 37.00", 1)
+            currentInputConnection?.commitText("37.00", 1)
         }
 
+        // Botón Euro (Solo envía el número)
         val btnEuro = view.findViewById<Button>(R.id.btn_euro)
         btnEuro?.setOnClickListener {
-            currentInputConnection?.commitText("Euro: 40.20", 1)
+            currentInputConnection?.commitText("40.20", 1)
         }
 
+        // Botón Binance (Solo envía el número)
         val btnBinance = view.findViewById<Button>(R.id.btn_binance)
         btnBinance?.setOnClickListener {
-            currentInputConnection?.commitText("Binance: 37.20", 1)
+            currentInputConnection?.commitText("37.20", 1)
         }
 
-        // Configurar Teclado Alfanumérico QWERTY
+        // Configurar Teclado QWERTY
         keyboardView = view.findViewById(R.id.keyboard_view)
         keyboard = Keyboard(this, R.xml.keyboard_qwerty)
         keyboardView.keyboard = keyboard
+        keyboardView.isPreviewEnabled = false // Desactiva el cuadro blanco flotante
         keyboardView.setOnKeyboardActionListener(this)
 
         return view
