@@ -1,11 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    android:padding="6dp">
 
+    <!-- Fila de tasas: Dólar, Euro y Binance -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="6dp">
+
+        <Button
+            android:id="@+id/btn_dolar"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:text="Dólar"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:backgroundTint="#2E7D32"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btn_euro"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:text="Euro"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:backgroundTint="#C62828"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp" />
+
+        <Button
+            android:id="@+id/btn_binance"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:text="Binance"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:backgroundTint="#EF6C00"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <!-- Teclado Alfanumérico -->
     <android.inputmethodservice.KeyboardView
         android:id="@+id/keyboard_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:background="#F5F5F5"
+        android:keyBackground="@android:drawable/btn_default"
+        android:keyTextColor="#000000"
+        android:keyTextSize="20sp"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
 
 </LinearLayout>
