@@ -6,70 +6,17 @@ XML
     android:keyWidth="10%p"
     android:keyHeight="52dp"
     android:horizontalGap="1px"
-    android:verticalGap="2px"
-    android:keyBackground="@android:drawable/btn_keyboard_key_full"
-    android:keyboardMode="0">
-
-    <!-- Fila 1: Números -->
+    android:verticalGap="2px">
     <Row>
-        <Key android:codes="49" android:keyLabel="1" android:popupCharacters=""/>
-        <Key android:codes="50" android:keyLabel="2" android:popupCharacters=""/>
-        <Key android:codes="51" android:keyLabel="3" android:popupCharacters=""/>
-        <Key android:codes="52" android:keyLabel="4" android:popupCharacters=""/>
-        <Key android:codes="53" android:keyLabel="5" android:popupCharacters=""/>
-        <Key android:codes="54" android:keyLabel="6" android:popupCharacters=""/>
-        <Key android:codes="55" android:keyLabel="7" android:popupCharacters=""/>
-        <Key android:codes="56" android:keyLabel="8" android:popupCharacters=""/>
-        <Key android:codes="57" android:keyLabel="9" android:popupCharacters=""/>
-        <Key android:codes="48" android:keyLabel="0" android:popupCharacters=""/>
+        <Key android:codes="49" android:keyLabel="1"/>
+        <Key android:codes="50" android:keyLabel="2"/>
+        <Key android:codes="51" android:keyLabel="3"/>
+        <Key android:codes="52" android:keyLabel="4"/>
+        <Key android:codes="53" android:keyLabel="5"/>
+        <Key android:codes="54" android:keyLabel="6"/>
+        <Key android:codes="55" android:keyLabel="7"/>
+        <Key android:codes="56" android:keyLabel="8"/>
+        <Key android:codes="57" android:keyLabel="9"/>
+        <Key android:codes="48" android:keyLabel="0"/>
     </Row>
-
-    <!-- Fila 2: QWERTYUIOP -->
-    <Row>
-        <Key android:codes="113" android:keyLabel="q" android:popupCharacters=""/>
-        <Key android:codes="119" android:keyLabel="w" android:popupCharacters=""/>
-        <Key android:codes="101" android:keyLabel="e" android:popupCharacters=""/>
-        <Key android:codes="114" android:keyLabel="r" android:popupCharacters=""/>
-        <Key android:codes="116" android:keyLabel="t" android:popupCharacters=""/>
-        <Key android:codes="121" android:keyLabel="y" android:popupCharacters=""/>
-        <Key android:codes="117" android:keyLabel="u" android:popupCharacters=""/>
-        <Key android:codes="105" android:keyLabel="i" android:popupCharacters=""/>
-        <Key android:codes="111" android:keyLabel="o" android:popupCharacters=""/>
-        <Key android:codes="112" android:keyLabel="p" android:popupCharacters=""/>
-    </Row>
-
-    <!-- Fila 3: ASDFGHJKLÑ -->
-    <Row>
-        <Key android:codes="97" android:keyLabel="a" android:popupCharacters=""/>
-        <Key android:codes="115" android:keyLabel="s" android:popupCharacters=""/>
-        <Key android:codes="100" android:keyLabel="d" android:popupCharacters=""/>
-        <Key android:codes="102" android:keyLabel="f" android:popupCharacters=""/>
-        <Key android:codes="103" android:keyLabel="g" android:popupCharacters=""/>
-        <Key android:codes="104" android:keyLabel="h" android:popupCharacters=""/>
-        <Key android:codes="106" android:keyLabel="j" android:popupCharacters=""/>
-        <Key android:codes="107" android:keyLabel="k" android:popupCharacters=""/>
-        <Key android:codes="108" android:keyLabel="l" android:popupCharacters=""/>
-        <Key android:codes="241" android:keyLabel="ñ" android:popupCharacters=""/>
-    </Row>
-
-    <!-- Fila 4: ZXCVBNM y Borrar -->
-    <Row>
-        <Key android:codes="122" android:keyLabel="z" android:popupCharacters=""/>
-        <Key android:codes="120" android:keyLabel="x" android:popupCharacters=""/>
-        <Key android:codes="99" android:keyLabel="c" android:popupCharacters=""/>
-        <Key android:codes="118" android:keyLabel="v" android:popupCharacters=""/>
-        <Key android:codes="98" android:keyLabel="b" android:popupCharacters=""/>
-        <Key android:codes="110" android:keyLabel="n" android:popupCharacters=""/>
-        <Key android:codes="109" android:keyLabel="m" android:popupCharacters=""/>
-        <Key android:codes="-5" android:keyLabel="⌫" android:keyWidth="30%p" android:popupCharacters=""/>
-    </Row>
-
-    <!-- Fila 5: Coma, Espacio, Punto y Enter -->
-    <Row>
-        <Key android:codes="44" android:keyLabel="," android:keyWidth="15%p" android:popupCharacters=""/>
-        <Key android:codes="32" android:keyLabel="Espacio" android:keyWidth="50%p" android:popupCharacters=""/>
-        <Key android:codes="46" android:keyLabel="." android:keyWidth="15%p" android:popupCharacters=""/>
-        <Key android:codes="10" android:keyLabel="↵" android:keyWidth="20%p" android:popupCharacters=""/>
-    </Row>
-
 </Keyboard>
