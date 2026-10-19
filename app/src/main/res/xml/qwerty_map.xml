@@ -1,6 +1,3 @@
-XML
-
-
 <Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
     android:keyWidth="10%p"
     android:keyHeight="52dp">
