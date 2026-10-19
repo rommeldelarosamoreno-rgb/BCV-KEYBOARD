@@ -1,6 +1,3 @@
-Kotlin
-
-
 package com.bcvkeyboard.app
 
 import android.inputmethodservice.InputMethodService
