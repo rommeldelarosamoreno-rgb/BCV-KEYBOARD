@@ -15,7 +15,8 @@ class BcvKeyboardService : InputMethodService(), KeyboardView.OnKeyboardActionLi
     private lateinit var keyboard: Keyboard
 
     override fun onCreateInputView(): View {
-        val view = layoutInflater.inflate(R.layout.keyboard_view, null)
+        // Usamos la nueva referencia de layout: keyboard_layout
+        val view = layoutInflater.inflate(R.layout.keyboard_layout, null)
 
         // Botón Dólar (Solo envía el número)
         val btnDolar = view.findViewById<Button>(R.id.btn_dolar)
@@ -35,9 +36,9 @@ class BcvKeyboardService : InputMethodService(), KeyboardView.OnKeyboardActionLi
             currentInputConnection?.commitText("37.20", 1)
         }
 
-        // Configurar Teclado QWERTY
+        // Configurar Teclado con la nueva referencia de xml: qwerty_map
         keyboardView = view.findViewById(R.id.keyboard_view)
-        keyboard = Keyboard(this, R.xml.keyboard_qwerty)
+        keyboard = Keyboard(this, R.xml.qwerty_map)
         keyboardView.keyboard = keyboard
         keyboardView.isPreviewEnabled = false // Desactiva el cuadro blanco flotante
         keyboardView.setOnKeyboardActionListener(this)
