@@ -3,15 +3,17 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:background="#E3E5E8"
-    android:padding="4dp">
+    android:background="#D1D5DB"
+    android:padding="3dp">
 
-    <!-- Fila de tasas con el estilo de botones de Samsung -->
+    <!-- Fila superior de tasas de cambio con el mismo estilo limpio -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginBottom="4dp">
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp">
 
         <Button
             android:id="@+id/btn_dolar"
@@ -22,8 +24,8 @@
             android:textSize="14sp"
             android:textStyle="bold"
             android:backgroundTint="#FFFFFF"
-            android:textColor="#333333"
-            android:elevation="1dp"
+            android:textColor="#1F2937"
+            android:stateListAnimator="@null"
             android:layout_marginEnd="3dp"/>
 
         <Button
@@ -35,8 +37,8 @@
             android:textSize="14sp"
             android:textStyle="bold"
             android:backgroundTint="#FFFFFF"
-            android:textColor="#333333"
-            android:elevation="1dp"
+            android:textColor="#1F2937"
+            android:stateListAnimator="@null"
             android:layout_marginStart="3dp"
             android:layout_marginEnd="3dp"/>
 
@@ -49,20 +51,19 @@
             android:textSize="14sp"
             android:textStyle="bold"
             android:backgroundTint="#FFFFFF"
-            android:textColor="#333333"
-            android:elevation="1dp"
+            android:textColor="#1F2937"
+            android:stateListAnimator="@null"
             android:layout_marginStart="3dp"/>
     </LinearLayout>
 
-    <!-- Vista completa del teclado QWERTY -->
+    <!-- Teclado QWERTY -->
     <android.inputmethodservice.KeyboardView
         android:id="@+id/keyboard_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#E3E5E8"
-        android:keyBackground="@android:drawable/btn_default"
+        android:background="#D1D5DB"
         android:keyTextColor="#000000"
-        android:keyTextSize="18sp"
+        android:keyTextSize="19sp"
         android:focusable="true"
         android:focusableInTouchMode="true" />
 
