@@ -1,6 +1,8 @@
 <Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
     android:keyWidth="10%p"
-    android:keyHeight="52dp">
+    android:keyHeight="52dp"
+    android:horizontalGap="3dp"
+    android:verticalGap="6dp">
 
     <!-- Fila 1: Números -->
     <Row>
@@ -16,7 +18,7 @@
         <Key android:codes="48" android:keyLabel="0"/>
     </Row>
 
-    <!-- Fila 2: QWERTYUIOP en mayúscula -->
+    <!-- Fila 2: QWERTYUIOP -->
     <Row>
         <Key android:codes="81" android:keyLabel="Q"/>
         <Key android:codes="87" android:keyLabel="W"/>
@@ -30,8 +32,8 @@
         <Key android:codes="80" android:keyLabel="P"/>
     </Row>
 
-    <!-- Fila 3: ASDFGHJKLÑ en mayúscula -->
-    <Row android:horizontalGap="5%p">
+    <!-- Fila 3: ASDFGHJKLÑ -->
+    <Row android:horizontalGap="4%p">
         <Key android:codes="65" android:keyLabel="A"/>
         <Key android:codes="83" android:keyLabel="S"/>
         <Key android:codes="68" android:keyLabel="D"/>
@@ -46,7 +48,7 @@
 
     <!-- Fila 4: Mayús, ZXCVBNM y Borrar -->
     <Row>
-        <Key android:codes="-1" android:keyLabel="MAYUS" android:keyWidth="15%p"/>
+        <Key android:codes="-1" android:keyLabel="⇧" android:keyWidth="15%p"/>
         <Key android:codes="90" android:keyLabel="Z"/>
         <Key android:codes="88" android:keyLabel="X"/>
         <Key android:codes="67" android:keyLabel="C"/>
@@ -54,15 +56,15 @@
         <Key android:codes="66" android:keyLabel="B"/>
         <Key android:codes="78" android:keyLabel="N"/>
         <Key android:codes="77" android:keyLabel="M"/>
-        <Key android:codes="-5" android:keyLabel="BORRAR" android:keyWidth="15%p" android:isRepeatable="true"/>
+        <Key android:codes="-5" android:keyLabel="⌫" android:keyWidth="15%p" android:isRepeatable="true"/>
     </Row>
 
-    <!-- Fila 5: Símbolos, Espacio y Enter (Corregido el texto del botón de símbolos) -->
+    <!-- Fila 5: Símbolos, Espacio y Enter -->
     <Row>
         <Key android:codes="-2" android:keyLabel="SYM" android:keyWidth="15%p"/>
         <Key android:codes="44" android:keyLabel="," android:keyWidth="10%p"/>
-        <Key android:codes="32" android:keyLabel="espacio" android:keyWidth="50%p"/>
+        <Key android:codes="32" android:keyLabel="ESPACIO" android:keyWidth="50%p"/>
         <Key android:codes="46" android:keyLabel="." android:keyWidth="10%p"/>
-        <Key android:codes="10" android:keyLabel="ENTER" android:keyWidth="15%p"/>
+        <Key android:codes="10" android:keyLabel="↵" android:keyWidth="15%p"/>
     </Row>
 </Keyboard>
