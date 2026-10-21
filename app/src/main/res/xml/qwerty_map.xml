@@ -44,7 +44,7 @@
         <Key android:codes="209" android:keyLabel="Ñ"/>
     </Row>
 
-    <!-- Fila 4: Mayús, ZXCVBNM y Borrar (Usando texto limpio en vez de símbolos que se rompen) -->
+    <!-- Fila 4: Mayús, ZXCVBNM y Borrar -->
     <Row>
         <Key android:codes="-1" android:keyLabel="MAYUS" android:keyWidth="15%p"/>
         <Key android:codes="90" android:keyLabel="Z"/>
@@ -57,9 +57,9 @@
         <Key android:codes="-5" android:keyLabel="BORRAR" android:keyWidth="15%p" android:isRepeatable="true"/>
     </Row>
 
-    <!-- Fila 5: Símbolos, Espacio y Enter -->
+    <!-- Fila 5: Símbolos, Espacio y Enter (Corregido el texto del botón de símbolos) -->
     <Row>
-        <Key android:codes="-2" android:keyLabel="?12" android:keyWidth="15%p"/>
+        <Key android:codes="-2" android:keyLabel="SYM" android:keyWidth="15%p"/>
         <Key android:codes="44" android:keyLabel="," android:keyWidth="10%p"/>
         <Key android:codes="32" android:keyLabel="espacio" android:keyWidth="50%p"/>
         <Key android:codes="46" android:keyLabel="." android:keyWidth="10%p"/>
